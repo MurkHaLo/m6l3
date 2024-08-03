@@ -22,8 +22,7 @@ def get_weather(message):
         temperature = main['temp']
         
         weather_info = f"Погода в {city}:\n" \
-                       f"Температура: {temperature}°C
-" \
+                       f"Температура: {temperature}°C" \
                        f"Описание: {weather_desc.capitalize()}"
         
         bot.reply_to(message, weather_info)
